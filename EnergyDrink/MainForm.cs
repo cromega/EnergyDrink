@@ -1,17 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 
 namespace EnergyDrink
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
         private enum ThreadState : uint {
             ES_AWAYMODE_REQUIRED = 0x00000040,
@@ -25,7 +18,7 @@ namespace EnergyDrink
         [DllImport("Kernel32.dll", EntryPoint = "SetThreadExecutionState", CallingConvention = CallingConvention.Winapi)]
         private static extern ThreadState SetThreadExecutionState(ThreadState state);
 
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
         }
