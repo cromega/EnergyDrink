@@ -65,7 +65,7 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Energy Drink";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);

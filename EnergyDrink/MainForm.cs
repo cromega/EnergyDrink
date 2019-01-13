@@ -14,7 +14,6 @@ namespace EnergyDrink
             ES_USER_PRESENT = 0x00000004
         }
 
-
         [DllImport("Kernel32.dll", EntryPoint = "SetThreadExecutionState", CallingConvention = CallingConvention.Winapi)]
         private static extern ThreadState SetThreadExecutionState(ThreadState state);
 
@@ -23,11 +22,10 @@ namespace EnergyDrink
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void MainForm_Load(object sender, EventArgs e)
         {
             var requiredFlags = ThreadState.ES_DISPLAY_REQUIRED | ThreadState.ES_CONTINUOUS;
             ThreadState NewState = SetThreadExecutionState(requiredFlags);
-
 
             if (NewState == ThreadState.ES_CONTINUOUS)
             {
