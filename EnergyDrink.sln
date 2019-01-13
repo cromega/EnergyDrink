@@ -1,7 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnergyDrink", "EnergyDrink\EnergyDrink.csproj", "{36F35C6B-7C83-463C-BBD7-EBB60367D5E9}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Installer", "Installer\Installer.vdproj", "{B479ECA3-B6F4-4133-87A7-E4CDEF0B1131}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,8 +17,13 @@ Global
 		{36F35C6B-7C83-463C-BBD7-EBB60367D5E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36F35C6B-7C83-463C-BBD7-EBB60367D5E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36F35C6B-7C83-463C-BBD7-EBB60367D5E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B479ECA3-B6F4-4133-87A7-E4CDEF0B1131}.Debug|Any CPU.ActiveCfg = Debug
+		{B479ECA3-B6F4-4133-87A7-E4CDEF0B1131}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {69CCB29D-E6A0-4F82-9801-C5C4C57FFC34}
 	EndGlobalSection
 EndGlobal
